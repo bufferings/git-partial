@@ -1,0 +1,31 @@
+[tools]
+rust = "latest"
+lefthook = "latest"
+
+[tasks.fmt-check]
+description = "Check Rust code formatting"
+run = "cargo fmt --all -- --check"
+
+[tasks.fmt-fix]
+description = "Fix Rust code formatting issues"
+run = "cargo fmt --all"
+
+[tasks.lint]
+description = "Run clippy linting"
+run = "cargo clippy -- -D warnings"
+
+[tasks.lint-fix]
+description = "Fix clippy linting issues where possible"
+run = "cargo clippy --fix -- -D warnings"
+
+[tasks.check]
+description = "Check if code compiles"
+run = "cargo check --all"
+
+[tasks.test-lib]
+description = "Run library tests"
+run = "cargo test --lib"
+
+[tasks.test-all]
+description = "Run all tests"
+run = "cargo test --all"

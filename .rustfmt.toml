@@ -1,0 +1,17 @@
+# Maximum line width (default is 100)
+max_width = 100
+
+# Force line breaks for function arguments
+fn_args_layout = "Vertical"
+
+# Group and organize imports
+group_imports = "StdExternalCrate"
+
+# Use line breaks for match arms when conditions span multiple lines
+match_arm_leading_pipes = "Preserve"
+
+# Break lines for method chaining calls
+chain_width = 60
+
+# Remove empty lines
+blank_lines_lower_bound = 0

@@ -1,0 +1,14 @@
+# Configuration for Lefthook git hooks
+# See: https://lefthook.dev/configuration/
+
+pre-commit:
+  parallel: true
+  commands:
+    fmt:
+      run: mise run fmt-fix
+    lint:
+      run: mise run lint
+    compile:
+      run: mise run check
+    test:
+      run: mise run test-lib
